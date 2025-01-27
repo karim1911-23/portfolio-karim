@@ -112,7 +112,7 @@ export default function Sidebar() {
                 backgroundColor: mode === "dark" ? "#3b3b3b" : "#555555",
               }}
             >
-              Home
+              Acceuil
             </a>
             <a
               href="#about"
@@ -124,7 +124,7 @@ export default function Sidebar() {
                 backgroundColor: mode === "dark" ? "#3b3b3b" : "#555555",
               }}
             >
-              About
+              A propos
             </a>
             <a
               href="#project"
@@ -136,7 +136,7 @@ export default function Sidebar() {
                 backgroundColor: mode === "dark" ? "#3b3b3b" : "#555555",
               }}
             >
-              Projects
+              Projet
             </a>
             <a
               href="#contact"
