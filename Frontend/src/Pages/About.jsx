@@ -171,6 +171,7 @@ export default function About() {
           }}
           id="toolsC"
           className="tools max-h-[400px] overflow-y-auto
+          rounded-xl
   [&::-webkit-scrollbar]:w-2
   [&::-webkit-scrollbar-track]:bg-gray-100
   [&::-webkit-scrollbar-thumb]:bg-gray-300
