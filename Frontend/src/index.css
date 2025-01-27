@@ -1,0 +1,322 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+.lastName {
+  font-family: "Merriweather", serif;
+  font-size: 35px;
+}
+
+.head {
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+}
+
+.icon:hover {
+  color: #1f618d;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+/* #me::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-bottom: 3px solid var(--theme-color);
+  border-left: 3px solid var(--theme-color);
+  position: absolute;
+  bottom: 0px; 
+  
+  left: 20px; 
+} */
+
+/* #me::before {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-top: 3px solid var(--theme-color);
+  border-right: 3px solid var(--theme-color);
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+} */
+.scroll-container,
+body::-webkit-scrollbar {
+  width: 6px; /* Largeur de la scrollbar */
+}
+
+/* Style pour la track de la scrollbar */
+.scroll-container,
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Couleur de fond de la track */
+}
+
+/* Style pour le thumb de la scrollbar */
+.scroll-container,
+body::-webkit-scrollbar-thumb {
+  background: #166d7b; /* Couleur du thumb */
+}
+body::-webkit-scrollbar-thumb {
+  background: #000000; /* Couleur du thumb */
+}
+
+/* Style pour le thumb de la scrollbar au survol */
+.scroll-container,
+body::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Couleur du thumb au survol */
+}
+
+.send {
+  background-color: #2f5815;
+  padding: 15px;
+  width: 20%;
+  margin: 20px 500px;
+  border-radius: 15px;
+}
+
+.downolad {
+  background-color: #2f5815;
+  padding: 15px;
+  width: 20%;
+  margin: 20px 0px;
+  border-radius: 15px;
+}
+.containerContact {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+.imgPrj:hover .more {
+  display: block;
+}
+
+.menu {
+  background-color: #494949;
+}
+
+.iconeMenu {
+  display: none;
+}
+.ligne {
+  margin: "10px 610px";
+}
+.github {
+  display: none;
+}
+
+.lastProject {
+  text-align: "center";
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.conatct-textarea {
+  width: 50%;
+}
+
+.home {
+  background-color: #1d1d1d;
+  width: 100%;
+  min-height: 100vh;
+}
+#about {
+  width: 100%;
+  background-color: #1d1d1d;
+  color: white;
+  overflow-x: hidden;
+  padding: 40px 20px;
+}
+
+.resume {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.Toools {
+  width: 100%;
+  background-color: #1d1d1d;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+#project {
+  width: 100%;
+}
+
+#contact {
+  width: 100%;
+}
+
+
+.gitLinkd {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+@media (max-width: 800px) {
+  #project,
+  #contact,
+  .Toools,
+  .resume,
+  #about,
+  .home {
+    width: 100%;
+  }
+
+  .iconeMenu {
+    display: block;
+    border-radius: 3px;
+    color: #ffffff;
+    align-items: center;
+    font-size: 26px;
+  }
+
+  .allMenu {
+    display: none;
+  }
+
+  .tools {
+    height: 530px;
+  }
+
+  .tool {
+    max-width: 100%;
+  }
+
+  .more {
+    display: none;
+  }
+
+  .github {
+    display: block;
+  }
+
+  .containerTools {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ligne {
+    display: none;
+  }
+
+  .lastProject {
+    text-align: start;
+  }
+}
+
+@media (max-width: 667px) {
+  .home,
+  #project,
+  #contact,
+  .Toools,
+  .resume,
+  #about {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 530px) {
+  .home,
+  #project,
+  #contact,
+  .Toools,
+  .resume,
+  #about {
+    width: 100%;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 618px) {
+  .containerTools {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tool {
+    background-color: #ffffff;
+  }
+
+  .tools {
+    height: 600px;
+  }
+
+  .home,
+  #project,
+  #contact,
+  .Toools,
+  .resume,
+  #about {
+    width: 100%;
+  }
+}
+
+.gitLinkd {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media screen and (max-width: 419px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .contact-form,
+  .conatct-textarea {
+    width: 100%;
+  }
+
+  .gitLinkd {
+    display: none;
+  }
+
+  .home {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 256px) {
+  .home,
+  #project,
+  #contact,
+  .Toools,
+  .resume,
+  #about {
+    width: 100%;
+  }
+}
