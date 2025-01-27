@@ -85,7 +85,7 @@ export default function About() {
               données.
             </p>
             <a
-              href="/CV.pdf"
+              href="/QASID Karim CV.pdf"
               download="cv_karim_qasid.pdf" // Nom du fichier téléchargé
             >
               <button
