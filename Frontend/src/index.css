@@ -82,6 +82,28 @@ body::-webkit-scrollbar-thumb:hover {
   background: #555; /* Couleur du thumb au survol */
 }
 
+#toolsC::-webkit-scrollbar {
+  width: 6px; /* Largeur de la scrollbar */
+}
+
+/* Style pour la track de la scrollbar */
+#toolsC::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Couleur de fond de la track */
+}
+
+/* Style pour le thumb de la scrollbar */
+#toolsC::-webkit-scrollbar-thumb {
+  background: #166d7b; /* Couleur du thumb */
+}
+#toolsC::-webkit-scrollbar-thumb {
+  background: #000000; /* Couleur du thumb */
+}
+
+/* Style pour le thumb de la scrollbar au survol */
+#toolsC::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Couleur du thumb au survol */
+}
+
 .send {
   background-color: #2f5815;
   padding: 15px;

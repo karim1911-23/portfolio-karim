@@ -169,7 +169,8 @@ export default function About() {
             overflow: "scroll",
             overflowX: "scroll",
           }}
-          className="tools scroll-container"
+          id="toolsC"
+          className="tools"
         >
           <Tools />
         </div>
