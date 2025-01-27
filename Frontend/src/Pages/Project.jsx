@@ -490,23 +490,24 @@ export default function Project() {
                   )}
                 </div>
               </div>
-
-              <a
-                className="github"
-                href={p.linkGit}
-                style={{
-                  marginLeft: "10px",
-                  position: "absolute",
-                  bottom: "20px",
-                  right: "20px",
-                  border: "1px solid #212f3d",
-                  padding: "7px 10px",
-                  borderRadius: "3px",
-                  color: `${them}`,
-                }}
-              >
-                Github
-              </a>
+              {p.linkGit && p.linkGit.trim() !== "" ? (
+                <a
+                  className="github"
+                  href={p.linkGit}
+                  style={{
+                    marginLeft: "10px",
+                    position: "absolute",
+                    bottom: "20px",
+                    right: "20px",
+                    border: "1px solid #212f3d",
+                    padding: "7px 10px",
+                    borderRadius: "3px",
+                    color: `${them}`,
+                  }}
+                >
+                  Github
+                </a>
+              ) : null}
               <button
                 className="more"
                 style={{
