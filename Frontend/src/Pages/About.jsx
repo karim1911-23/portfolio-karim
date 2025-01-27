@@ -167,12 +167,12 @@ export default function About() {
             borderRadius: "12px",
             boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
             overflow: "scroll",
-            overflowX: "scroll",
+            overflowY: "hidden",
           }}
           id="toolsC"
           className="tools max-h-[400px] overflow-y-auto
           rounded-xl
-  [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar]:w-1
   [&::-webkit-scrollbar-track]:bg-gray-100
   [&::-webkit-scrollbar-thumb]:bg-gray-300
   dark:[&::-webkit-scrollbar-track]:bg-neutral-700
