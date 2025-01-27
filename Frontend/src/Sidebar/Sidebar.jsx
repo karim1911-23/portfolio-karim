@@ -136,7 +136,7 @@ export default function Sidebar() {
                 backgroundColor: mode === "dark" ? "#3b3b3b" : "#555555",
               }}
             >
-              Projet
+              Projets
             </a>
             <a
               href="#contact"
