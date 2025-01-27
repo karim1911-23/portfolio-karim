@@ -2,12 +2,13 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "../Context/PortfolioContext";
 import Resume from "../Component/Resume";
 import Tools from "../Component/Tools";
+import { useMediaQuery } from "react-responsive";
 
 export default function About() {
   const [them, setThem] = useState("");
   const { theme, mode } = useTheme();
   let modeDL = mode === "dark";
-
+  const isMObile = useMediaQuery({ query: "(max-width: 618px)" });
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme) {
@@ -167,7 +168,7 @@ export default function About() {
             borderRadius: "12px",
             boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
             overflow: "scroll",
-            overflowY: "hidden",
+            overflowY: isMObile ? "scroll" : "hidden",
           }}
           id="toolsC"
           className="tools max-h-[400px] overflow-y-auto

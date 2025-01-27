@@ -58,7 +58,7 @@ export default function Project() {
       descr:
         "Notre application web de gestion de stock, développée avec React et Spring Boot, offre une plateforme moderne et sécurisée pour gérer efficacement les clients, commandes, produits, livraisons et factures. Grâce à l'intégration de Spring Security, les utilisateurs bénéficient d'une page de connexion sécurisée et d'une création de compte simplifiée. La page d'accueil dynamique affiche des histogrammes pour suivre en temps réel les statistiques clés de l'application. Cette solution complète répond aux besoins de gestion de stock avec des outils intuitifs et une interface utilisateur réactive.",
       project: "Gestion de Stock Web",
-      img: "/img/spring_react.jpg",
+      img: "/img/gestione1.png",
       imgDet: ["/img/gestion1.png", "/img/gestion2.png", "/img/gestion3.png"], // Tableau pour les images détaillées
       dev: "React", // Technologies utilisées
       dev1: "Spring Boot", // Technologies utilisées
