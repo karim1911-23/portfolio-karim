@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors"); // Pour gérer les requêtes cross-origin
-
+require("dotenv").config();
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -16,8 +16,8 @@ app.use(cors()); // Autoriser les requêtes cross-origin
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "qasidkarim04@gmail.com", // Remplacez par votre adresse Gmail
-    pass: "pxod ugnh dpfm kkqu", // Remplacez par votre mot de passe d'application
+    user: process.env.EMAIL, // Remplacez par votre adresse Gmail
+    pass: process.env.PASSWORD, // Remplacez par votre mot de passe d'application
   },
 });
 
