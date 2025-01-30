@@ -3,7 +3,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors"); // Pour gérer les requêtes cross-origin
-require("dotenv").config(); // Charger les variables d'environnement
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -17,8 +16,8 @@ app.use(cors()); // Autoriser les requêtes cross-origin
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: process.env.MY_EMAIL, // Utiliser la variable d'environnement
-    pass: process.env.MY_PASSWORD, // Utiliser la variable d'environnement
+    user: "qasidkarim04@gmail.com", // Remplacez par votre adresse Gmail
+    pass: "pxod ugnh dpfm kkqu", // Remplacez par votre mot de passe d'application
   },
 });
 
@@ -36,7 +35,7 @@ app.post("/send-email", (req, res) => {
   // Options de l'e-mail
   const mailOptions = {
     from: email, // Expéditeur
-    to: process.env.MY_EMAIL, // Destinataire (votre adresse e-mail)
+    to: "qasidkarim04@gmail.com", // Destinataire (votre adresse e-mail)
     subject: `Nouveau message de ${name} (${email})`, // Sujet de l'e-mail
     text: message, // Corps du message
   };
